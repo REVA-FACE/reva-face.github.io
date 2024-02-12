@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title id="title"></title>
+    <script>
+      window.onload = function() {
+        const titleElement = document.getElementById('title');
+        const titleText = "Essence 2.0";
+        const characters = titleText.split('');
+        let index = 0;
+        let direction = 1;
+    
+        function updateTitle() {
+          if (direction === 1) {
+            if (index < characters.length) {
+              titleElement.textContent += characters[index];
+              index++;
+            } else {
+              direction = -1;
+            }
+          } else {
+            if (index > 1) {
+              index--;
+              titleElement.textContent = characters.slice(0, index).join('');
+            } else {
+              direction = 1;
+            }
+          }
+          setTimeout(updateTitle, 300);
+        }
+    
+        updateTitle();
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="preloader">
+    <div id="spinner"></div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var preloader = document.getElementById("preloader");
+    
+    preloader.style.display = "flex";
+    
+    window.addEventListener("load", function () {
+        preloader.style.opacity = 0;
+        setTimeout(function () {
+            preloader.style.display = "none";
+        }, 500);
+    });
+});
+
+</script>
+  <header class="header">
+    <img src="./REVA_logo.png" alt="" class="im1">
+    <img src="./FACE_logo.png" alt="" class="im2">
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#sponsor">Sponsor</a>
+      <a href="#registration">Registration</a>
+      <a href="#team">Team</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+<p id="count-txt">Starts in</p>
+<div id="countdown"></div>
+    <section id="home" class="section">
+        <div class="fade-container">
+            <p style="font-size: 22px">Welcome to</p><h1 id="fade-text"></h1>
+          </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 style="position: absolute; left: 0px;">About</h2>
+            <p style="font-size: large; padding-left: 170px;">Get ready to experience the ultimate blend of culture, technology, and adrenaline at EssenCSE 2.0! Hosted by the prestigious School of CSE at REVA University, this fest promises an electrifying lineup of over 30 events, including captivating dance performances, soul-stirring singing competitions, mind-bending murder mysteries, pulse-pounding treasure hunts, and even an exhilarating real-life adaptation of the popular game "Among Us". Open to all students of REVA University, EssenCSE 2.0 is your ticket to a whirlwind of excitement, creativity, and unforgettable memories. Join us for a celebration like no other and unleash your talents in an atmosphere buzzing with energy and camaraderie!</p>
+    </section>
+
+    <section id="events" class="section">
+      <h2>Events</h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-header">Cultural Events</div>
+          <div class="card-content">
+            <p style="color: black; font-size:16px;">Unravel gripping mysteries, immerse in cultural performances, let each moment ignite senses, and crave more in this world of wonder.
+            </p>
+          </div>
+          <a target="_blank" href="./cultural.pdf" class="card-button" style="font-size: large; color: rgb(10, 10, 10);">Learn More</a>
+        </div>
+    
+        <div class="card">
+          <div class="card-header">Technical Events</div>
+          <div class="card-content">
+            <p style="color: black; font-size: 16px;">Join thrilling Technical Treasure Hunts, futuristic Among Us 2.0 battles, and immersive murder mysteries in our tech-centric events!
+            </p>
+          </div>
+          <a target="_blank" href="./tech.pdf" class="card-button" style="color: rgb(7, 7, 7); font-size: large;">Learn More</a>
+        </div>
+    
+        <div class="card">
+          <div class="card-header">Sports Events</div>
+          <div class="card-content">
+            <p style="color: black; font-size: 16px;">Join us for an action-packed day of tug of war, lemon and spoon race, lagori, and more thrilling events!
+            </p>
+          </div>
+          <a target="_blank" href="./sports.pdf" class="card-button" style="color: rgb(12, 12, 12); font-size: large;">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsor" class="section">
+      <h2 style="position: absolute; left: 0px;" id="sponsor-txt">Sponsored By</h2>
+      <div class="sponsor-container">
+        <div class="sponsor-card">
+          <img src="mfc.jpeg" alt="Sponsor 1">
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="registration" class="section">
+      <h2 style="position: absolute; left:0px;">Registration</h2>
+      <h4 id="reg-txt"></h4>
+      <div class="">
+        <a href="https://forms.gle/gHgs3xnXVQoAxPCDA" class="reg-button">Register NOW!!</a>    
+      </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const isEdge = navigator.userAgentData?.brands?.some(brand => brand.brand === 'Microsoft Edge');
+
+  if (isEdge) {
+    const regTxt = document.getElementById("reg-txt");
+    if (regTxt) {
+      regTxt.style.top = "2900px";
+    }
+  }
+});
+  </script>
+
+<section id="team" class="section">
+  <div class="slideshow-container">
+    <div class="slide slide0">
+      <div class="crew-heading">
+          <h1>THE CREW</h1>
+      </div>
+  </div>
+  <div class="slide slide1">
+    <h1 style=" margin: 0 auto;font-size:40px; margin-right: 30px;">Faculty Members</h1>
+    <div class="card-container">
+
+      <div class="card">
+        <img src="ashwin.jpeg" alt="Faculty 1">
+        <div class="card-details">
+            <div class="card-name">Dr. AshwinKumar</div>
+            <div class="card-designation">Director, CSE department</div>
+        </div>
+    </div>
+        
+        <div class="card">
+            <img src="bindu.jpeg" alt="Faculty 1">
+            <div class="card-details">
+                <div class="card-name">Prof.Bindushree</div>
+                <div class="card-designation">Extra Curricular Vertical Head</div>
+            </div>
+        </div>
+        </div>
+        <div class="card-container">
+              <div class="card">
+                  <img src="bhav.jpeg" alt="Faculty 2">
+                  <div class="card-details">
+                      <div class="card-name">Prof. Bhavatarini</div>
+                  </div>
+              </div>
+
+              <div class="card">
+                <img src="nayana.jpeg" alt="Faculty 2">
+                <div class="card-details">
+                    <div class="card-name">Prof. Nayana</div>
+                </div>
+            </div>
+
+            <div class="card">
+              <img src="mala.jpeg" alt="Faculty 2">
+              <div class="card-details">
+                  <div class="card-name">Prof. Mala</div>
+              </div>
+          </div>
+          <div class="card">
+            <img src="kiran.jpeg" alt="Faculty 2">
+            <div class="card-details">
+                <div class="card-name">Prof. Kiran Kumar</div>
+            </div>
+        </div>
+        <div class="card">
+          <img src="megha.jpeg" alt="Faculty 2">
+          <div class="card-details">
+              <div class="card-name">Prof. Meghana</div>
+          </div>
+      </div>
+        <div class="card">
+          <img src="shiv.jpeg" alt="Faculty 2">
+          <div class="card-details">
+              <div class="card-name">Dr. Shiv Kumar Naik</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="slide slide2">
+        <h1 style=" font-size:30px;">Mentoring Team</h1>
+        <div class="card-container">
+          <div class="card">
+            <img src="ronak.jpeg" alt="Faculty 1">
+            <div class="card-details">
+                <div class="card-name">Ronak</div>
+                
+            </div>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/ronak_rdj?igsh=MWFraHNoeWZhcmRjdQ==" class="social-icon">
+                  <img src="instagram.png" alt="" style="width: 24px; height: 24px;">
+              </a>
+              <a href="https://www.linkedin.com/in/ronak-jain-b70362249" class="social-icon">
+                  <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+              </a>
+          </div>
+        </div>
+            
+            <div class="card">
+                <img src="tarun.jpg" alt="Faculty 1">
+                <div class="card-details">
+                    <div class="card-name">Tarun Rathod</div>
+                    
+                </div>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/tarunrathod?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon">
+                      <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+                  </a>
+              </div>
+            </div>
+            </div>
+          <h3 style=" font-size:30px; margin-top: 5px; ">Web Dev Team</h3>
+          <div class="card-container">
+            <div class="card">
+                <img src="surya.jpeg" alt="Mentor 1">
+                <div class="card-details">
+                    <div class="card-name">Suryanarayan Renjith</div>
+                    <div class="card-designation">Innoviz Co-ordinator</div>
+                </div>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/suryanarayan-renjith" class="social-icon">
+                      <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+                  </a>
+              </div>
+              
+            </div>
+            <div class="card">
+                  <img src="ananya.jpeg" alt="Mentor 1">
+                  <div class="card-details">
+                      <div class="card-name">Ananya Bhat</div>
+                      <div class="card-designation">Cultural Co-Ordinator</div>
+                  </div>
+                  <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ananya-bhat-001a25253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon">
+                        <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+                        <a href="https://www.instagram.com/anyaaaa_0103?igsh=MTdpbnhoYnhwb3NkdQ==" class="social-icon">
+                          <img src="instagram.png" alt="" style="width: 24px; height: 24px;">
+                    </a>
+                </div>
+                  </div>
+                  <div class="card">
+                    <img src="sheethal.jpeg" alt="Mentor 1">
+                    <div class="card-details">
+                        <div class="card-name">Sheethal S</div>
+                        <div class="card-designation">Creative Co-ordinator</div>
+                    </div>
+                    <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/sheethal-shanthraj-921b71266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon">
+                          <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+                      </a>
+                  </div>
+                    </div>
+                    <div class="card">
+                      <img src="varun.jpeg" alt="Mentor 1">
+                      <div class="card-details">
+                          <div class="card-name">Varun S</div>
+                          <div class="card-designation">Innoviz Co-ordinator</div>
+                      </div>
+                      <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/varun-somsaale-6a950625a/" class="social-icon">
+                            <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+                        </a>
+                    </div>
+                      </div>
+                      </div>
+        </div>
+       
+    </div>
+    <div class="slide slide3">
+      <h1 style=" text-align: center; margin-right: 300px; margin-top: 50px;font-size:40px;">Core Team</h1>
+      <div class="card-container">
+        <div class="card">
+          <img src="sanjana.jpeg" alt="Faculty 1">
+          <div class="card-details">
+              <div class="card-name">Sanjana</div>
+              <div class="card-designation">President, FACE</div>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/saysha_2623" class="social-icon">
+                <img src="instagram.png" alt="" style="width: 24px; height: 24px;">
+            </a>
+            
+        </div>
+      </div>
+      </div>
+      <div class="card-container">
+
+      <div class="card">
+        <img src="vikas.jpeg" alt="Faculty 1">
+        <div class="card-details">
+            <div class="card-name">Vikas Valluru</div>
+            <div class="card-designation">Technical VP</div>
+           
+        </div>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/vikas_valluru" class="social-icon">
+              <img src="instagram.png" alt="" style="width: 24px; height: 24px;">
+          </a>
+              <a href="https://www.linkedin.com/in/vikas-valluru-2b369324b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon">
+                <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+          </a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="ronak.jpeg" alt="Faculty 1">
+      <div class="card-details">
+          <div class="card-name">Ronak</div>
+          <div class="card-designation">Cultural VP</div>
+          
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/ronak_rdj?igsh=MWFraHNoeWZhcmRjdQ==" class="social-icon">
+            <img src="instagram.png" alt="" style="width: 24px; height: 24px;">
+        </a>
+            <a href="https://www.linkedin.com/in/ronak-jain-b70362249" class="social-icon">
+              <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+        </a>
+    </div>
+  </div>
+    <div class="card">
+      <img src="har.jpeg" alt="Faculty 1">
+      <div class="card-details">
+          <div class="card-name">Harshit</div>
+          <div class="card-designation">Outreach VP</div>
+      </div>
+  </div>
+  <div class="card">
+    <img src="kevin (1).jpeg" alt="Faculty 1">
+    <div class="card-details">
+        <div class="card-name">Kevin Jonathan</div>
+        <div class="card-designation">Treasurer</div>
+    </div>
+</div>
+<div class="card">
+  <img src="lok.jpeg" alt="Faculty 1">
+  <div class="card-details">
+      <div class="card-name">Lokesh</div>
+      <div class="card-designation">Sports VP</div>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="slide slide4">
+    <h1 style=" text-align: center; margin-right: 500px; margin-top: 40px;font-size:40px;">Sponsorship Team</h1>
+    <div class="card-container">
+      <div class="card">
+        <img src="yash.jpeg" alt="Faculty 1">
+        <div class="card-details">
+            <div class="card-name">Yashas</div>
+            
+        </div>
+    </div>
+
+    <div class="card">
+      <img src="reu (1).jpeg" alt="Faculty 1">
+      <div class="card-details">
+          <div class="card-name">Reuben</div>
+      </div>
+  </div>
+</div>
+</div>
+<div class="slide slide5">
+<h1 style=" text-align: center; margin-right: 300px; margin-top: 40px;font-size:40px;">Cultural Team</h1>
+<div class="card-container">
+  <div class="card">
+    <img src="ronak.jpeg" alt="Faculty 1">
+    <div class="card-details">
+        <div class="card-name">Ronak</div>
+    </div>
+</div>
+
+<div class="card">
+  <img src="apoorv.jpeg" alt="Faculty 1">
+  <div class="card-details">
+      <div class="card-name">Apoorv</div>
+  </div>
+</div>
+<div class="card">
+<img src="shamitha.jpeg" alt="Faculty 1">
+<div class="card-details">
+    <div class="card-name">Shamita</div>
+</div>
+</div>
+<div class="card">
+<img src="shalyn.jpeg" alt="Faculty 1">
+<div class="card-details">
+  <div class="card-name">Shalyn</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide slide6">
+<h1 style=" text-align: center; margin-right: 300px; margin-top: 40px;font-size:40px;">Technical Team</h1>
+<div class="card-container">
+<div class="card">
+  <img src="vikas.jpeg" alt="Faculty 1">
+  <div class="card-details">
+      <div class="card-name">Vikas</div>
+  </div>
+</div>
+
+<div class="card">
+<img src="ritvik.jpeg" alt="Faculty 1">
+<div class="card-details">
+    <div class="card-name">Ritvik</div>
+</div>
+</div>
+<div class="card">
+<img src="shankar.jpeg" alt="Faculty 1">
+<div class="card-details">
+  <div class="card-name">Shankar</div>
+</div>
+</div>
+<div class="card">
+<img src="tarun.jpg" alt="Faculty 1">
+<div class="card-details">
+<div class="card-name">Tarun</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide slide7">
+<h1 style=" text-align: center; margin-right: 500px; margin-top: 40px;font-size:40px;">Outreach Team</h1>
+<div class="card-container">
+<div class="card">
+  <img src="har.jpeg" alt="Faculty 1">
+  <div class="card-details">
+      <div class="card-name">Harshit</div>
+  </div>
+</div>
+
+<div class="card">
+<img src="khushi.jpeg" alt="Faculty 1">
+<div class="card-details">
+    <div class="card-name">Khushi</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide slide8">
+<h1 style=" text-align: center; margin-right: 400px; margin-top: 40px;font-size:40px;">Sports Team</h1>
+<div class="card-container">
+<div class="card">
+  <img src="lok.jpeg" alt="Faculty 1">
+  <div class="card-details">
+      <div class="card-name">Lokesh</div>
+  </div>
+</div>
+
+<div class="card">
+<img src="shashank.jpeg" alt="Faculty 1">
+<div class="card-details">
+    <div class="card-name">Shashank</div>
+</div>
+</div>
+<div class="card">
+<img src="akash.jpeg" alt="Faculty 1">
+<div class="card-details">
+  <div class="card-name">Akash</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="slide slide9">
+<h1 style=" text-align: center; margin-right: 500px; margin-top: 40px;font-size:40px;">Creative Team</h1>
+<div class="card-container">
+<div class="card">
+  <img src="maha.jpeg" alt="Faculty 1">
+  <div class="card-details">
+      <div class="card-name">Maharishi</div>
+      
+  </div>
+</div>
+
+<div class="card">
+<img src="mukesh.jpeg" alt="Faculty 1">
+<div class="card-details">
+    <div class="card-name">Mukesh</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide slide10">
+<h1 style=" text-align: center; margin-right: 500px; margin-top: 40px;font-size:40px;">Marketing Team</h1>
+<div class="card-container">
+<div class="card">
+  <img src="shrey.jpeg" alt="Faculty 1">
+  <div class="card-details">
+      <div class="card-name">Shreyas</div>
+      
+  </div>
+</div>
+
+<div class="card">
+<img src="shyam.jpeg" alt="Faculty 1">
+<div class="card-details">
+    <div class="card-name">Shyam</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide slide11">
+<h1 style=" text-align: center; margin-right: 600px; margin-top: 5px;font-size:40px; ">Aperture Club</h1>
+<div class="card-container">
+<div class="card">
+  <img src="shreyas.jpeg" alt="Faculty 1">
+  <div class="card-details">
+      <div class="card-name">Shreyas Chandrashekhar</div>
+      <div class="card-designation">Aperture Club Lead</div>
+      
+  </div>
+</div>
+</div>
+<h1 style=" text-align: center; margin-right: 640px; margin-top: 5px;font-size:40px; margin-bottom: 10px;">Art Club Lead</h1>
+<div class="card-container">
+<div class="card">
+<img src="vinit.jpeg" alt="Faculty 1">
+<div class="card-details">
+    <div class="card-name">Vinit</div>
+    <div class="card-designation">Art Club</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide slide12">
+<h1 style=" text-align: center; margin-right: 590px; margin-top: 5px;font-size:40px; ">Rhythm Club</h1>
+<div class="card-container">
+<div class="card">
+  <img src="adhikar.jpeg" alt="Faculty 1">
+  <div class="card-details">
+      <div class="card-name">Adhikar</div>
+      <div class="card-designation">Rhythm Club Lead</div>
+      
+  </div>
+</div>
+</div>
+<h1 style=" text-align: center; margin-right: 600px; margin-top: 5px;font-size:40px; margin-bottom: 10px;">Showcase Club</h1>
+<div class="card-container">
+<div class="card">
+<img src="shalyn.jpeg" alt="Faculty 1">
+<div class="card-details">
+  <div class="card-name">Shalyn</div>
+  <div class="card-designation">Acting Showcase Club Lead</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="slide slide13">
+<h1 style=" text-align: center; margin-right: 630px; margin-top: 5px;font-size:40px; ">Groove Club</h1>
+<div class="card-container">
+<div class="card">
+  <img src="gowri.jpeg" alt="Faculty 1">
+  <div class="card-details">
+      <div class="card-name">Gowri</div>
+      <div class="card-designation">Groove Club Lead</div>
+      
+  </div>
+</div>
+</div>
+<h1 style=" text-align: center; margin-right: 630px; margin-top: 5px;font-size:40px; margin-bottom: 10px;">Inklings Club</h1>
+<div class="card-container">
+<div class="card">
+<img src="zaid.jpeg" alt="Faculty 1">
+<div class="card-details">
+    <div class="card-name">Zaid</div>
+    <div class="card-designation">Inklings Club Lead</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide slide14">
+<h1 style=" text-align: center; margin-right: 630px; margin-top: 5px;font-size:40px; ">Innoviz Club</h1>
+<div class="card-container">
+<div class="card">
+  <img src="adarsh.jpeg" alt="Faculty 1">
+  <div class="card-details">
+      <div class="card-name">Adarsh</div>
+      <div class="card-designation">Innoviz Club Lead</div>
+      
+  </div>
+</div>
+</div>
+<h1 style=" text-align: center; margin-right: 630px; margin-top: 5px;font-size:40px; margin-bottom: 10px;">Arcade Club</h1>
+<div class="card-container">
+<div class="card">
+<img src="madhu.jpeg" alt="Faculty 1">
+<div class="card-details">
+    <div class="card-name">Madhukar</div>
+    <div class="card-designation">Arcade Club Lead</div>
+</div>
+</div>
+</div>
+</div>
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+  
+</section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+  const isEdge = navigator.userAgentData?.brands?.some(brand => brand.brand === 'Microsoft Edge');
+
+  if (isEdge) {
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    
+    if (prevBtn) {
+      prevBtn.style.marginTop = "3450px";
+    }
+    
+    if (nextBtn) {
+      nextBtn.style.marginTop = "3450px";
+    }
+  }
+});
+  </script>
+
+  <section id="faq" class="section">
+    <h2>FAQ</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(1)"><span class="arrow">&#9660;</span>Q1. Who can take part in the events?</div>
+            <div class="answer" id="answer1">Reva students with their ID cards.</div>
+        </div>
+    
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(2)"><span class="arrow">&#9660;</span>Q2. How to register?</div>
+            <div class="answer" id="answer2">Register from the Registration <a href="#registration">Section.</a></div>
+        </div>
+    
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(3)"><span class="arrow">&#9660;</span>Q3. When does it start? </div>
+            <div class="answer" id="answer3">23rd Feb 2024</div>
+        </div>
+    
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(4)"><span class="arrow">&#9660;</span>Q4. Why join EssenCSE 2.0?</div>
+            <div class="answer" id="answer4">To have fun and create amazing memories.</div>
+        </div>
+    
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(5)"><span class="arrow">&#9660;</span>Q5. What are the timings?</div>
+            <div class="answer" id="answer5">11:30 AM - 4:30 PM</div>
+        </div>
+    </div> 
+</section>
+    <footer id="footer">
+      <p>&copy; 2024 ESSENCE 2.0. All rights reserved.</p>
+    </footer>
+    <div id="offline-message">
+      You are currently offline. Please check your internet connection.
+  </div>
+  <div id="online-message">
+      You are now online.
+  </div>
+   <script>
+        window.addEventListener('online', function() {
+
+            document.getElementById('offline-message').style.display = 'none';
+            document.getElementById('online-message').style.display = 'block';
+            setTimeout(function() {
+                document.getElementById('online-message').style.display = 'none';
+            }, 3000);
+        });
+
+        window.addEventListener('offline', function() {
+
+            document.getElementById('offline-message').style.display = 'block';
+            document.getElementById('online-message').style.display = 'none';
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

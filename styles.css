@@ -1179,6 +1179,12 @@ footer:hover {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  padding: 20px; 
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 #spinner {

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <title id="title"></title>
     <script>
@@ -61,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </script>
   <header class="header">
-    <img src="./REVA_logo.png" alt="" class="im1">
-    <img src="./FACE_logo.png" alt="" class="im2">
+    <img src="./assets/REVA_logo.png" alt="" class="im1">
+    <img src="./assets/FACE_logo.png" alt="" class="im2">
     <div class="hamburger-menu" onclick="toggleMenu()">
       <div class="bar"></div>
       <div class="bar"></div>
@@ -85,7 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <p style="font-size: 22px">Welcome to</p><h1 id="fade-text"></h1>
           </div>
     </section>
-
+    <div id="desktop-view-message">
+      For the best experience, please switch to desktop view.
+  </div>
+  
     <section id="about" class="section">
       <h2 style="position: absolute; left: 0px;">About</h2>
             <p style="font-size: large; padding-left: 170px;">Get ready to experience the ultimate blend of culture, technology, and adrenaline at EssenCSE 2.0! Hosted by the prestigious School of CSE at REVA University, this fest promises an electrifying lineup of over 30 events, including captivating dance performances, soul-stirring singing competitions, mind-bending murder mysteries, pulse-pounding treasure hunts, and even an exhilarating real-life adaptation of the popular game "Among Us". Open to all students of REVA University, EssenCSE 2.0 is your ticket to a whirlwind of excitement, creativity, and unforgettable memories. Join us for a celebration like no other and unleash your talents in an atmosphere buzzing with energy and camaraderie!</p>
@@ -100,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p style="color: black; font-size:16px;">Unravel gripping mysteries, immerse in cultural performances, let each moment ignite senses, and crave more in this world of wonder.
             </p>
           </div>
-          <a target="_blank" href="./cultural.pdf" class="card-button" style="font-size: large; color: rgb(10, 10, 10);">Learn More</a>
+          <a target="_blank" href="./assets/cultural.pdf" class="card-button" style="font-size: large; color: rgb(10, 10, 10);">Learn More</a>
         </div>
     
         <div class="card">
@@ -109,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p style="color: black; font-size: 16px;">Join thrilling Technical Treasure Hunts, futuristic Among Us 2.0 battles, and immersive murder mysteries in our tech-centric events!
             </p>
           </div>
-          <a target="_blank" href="./tech.pdf" class="card-button" style="color: rgb(7, 7, 7); font-size: large;">Learn More</a>
+          <a target="_blank" href="./assets/tech.pdf" class="card-button" style="color: rgb(7, 7, 7); font-size: large;">Learn More</a>
         </div>
     
         <div class="card">
@@ -118,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p style="color: black; font-size: 16px;">Join us for an action-packed day of tug of war, lemon and spoon race, lagori, and more thrilling events!
             </p>
           </div>
-          <a target="_blank" href="./sports.pdf" class="card-button" style="color: rgb(12, 12, 12); font-size: large;">Learn More</a>
+          <a target="_blank" href="./assets/sports.pdf" class="card-button" style="color: rgb(12, 12, 12); font-size: large;">Learn More</a>
         </div>
       </div>
     </section>
@@ -127,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <h2 style="position: absolute; left: 0px;" id="sponsor-txt">Sponsored By</h2>
       <div class="sponsor-container">
         <div class="sponsor-card">
-          <img src="mfc.jpeg" alt="Sponsor 1">
+          <img src="/assetsmfc.jpeg" alt="Sponsor 1">
         </div>
       </div>
     </section>
@@ -166,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="card-container">
 
       <div class="card">
-        <img src="ashwin.jpeg" alt="Faculty 1">
+        <img src="/assets/ashwin.jpeg" alt="Faculty 1">
         <div class="card-details">
             <div class="card-name">Dr. AshwinKumar</div>
             <div class="card-designation">Director, CSE department</div>
@@ -174,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
         
         <div class="card">
-            <img src="bindu.jpeg" alt="Faculty 1">
+            <img src="/assets/bindu.jpeg" alt="Faculty 1">
             <div class="card-details">
                 <div class="card-name">Prof.Bindushree</div>
                 <div class="card-designation">Extra Curricular Vertical Head</div>
@@ -183,39 +186,39 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <div class="card-container">
               <div class="card">
-                  <img src="bhav.jpeg" alt="Faculty 2">
+                  <img src="/assets/bhav.jpeg" alt="Faculty 2">
                   <div class="card-details">
                       <div class="card-name">Prof. Bhavatarini</div>
                   </div>
               </div>
 
               <div class="card">
-                <img src="nayana.jpeg" alt="Faculty 2">
+                <img src="/assets/nayana.jpeg" alt="Faculty 2">
                 <div class="card-details">
                     <div class="card-name">Prof. Nayana</div>
                 </div>
             </div>
 
             <div class="card">
-              <img src="mala.jpeg" alt="Faculty 2">
+              <img src="/assets/mala.jpeg" alt="Faculty 2">
               <div class="card-details">
                   <div class="card-name">Prof. Mala</div>
               </div>
           </div>
           <div class="card">
-            <img src="kiran.jpeg" alt="Faculty 2">
+            <img src="/assets/kiran.jpeg" alt="Faculty 2">
             <div class="card-details">
                 <div class="card-name">Prof. Kiran Kumar</div>
             </div>
         </div>
         <div class="card">
-          <img src="megha.jpeg" alt="Faculty 2">
+          <img src="/assets/megha.jpeg" alt="Faculty 2">
           <div class="card-details">
               <div class="card-name">Prof. Meghana</div>
           </div>
       </div>
         <div class="card">
-          <img src="shiv.jpeg" alt="Faculty 2">
+          <img src="/assets/shiv.jpeg" alt="Faculty 2">
           <div class="card-details">
               <div class="card-name">Dr. Shiv Kumar Naik</div>
           </div>
@@ -226,30 +229,30 @@ document.addEventListener("DOMContentLoaded", function () {
         <h1 style=" font-size:30px;">Mentoring Team</h1>
         <div class="card-container">
           <div class="card">
-            <img src="ronak.jpeg" alt="Faculty 1">
+            <img src="/assets/ronak.jpeg" alt="Faculty 1">
             <div class="card-details">
                 <div class="card-name">Ronak</div>
                 
             </div>
             <div class="social-icons">
               <a href="https://www.instagram.com/ronak_rdj?igsh=MWFraHNoeWZhcmRjdQ==" class="social-icon">
-                  <img src="instagram.png" alt="" style="width: 24px; height: 24px;">
+                  <img src="/assets/instagram.png" alt="" style="width: 24px; height: 24px;">
               </a>
               <a href="https://www.linkedin.com/in/ronak-jain-b70362249" class="social-icon">
-                  <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+                  <img src="/assets/linkedin.png" alt="" style="width: 24px; height: 24px;">
               </a>
           </div>
         </div>
             
             <div class="card">
-                <img src="tarun.jpg" alt="Faculty 1">
+                <img src="/assets/tarun.jpg" alt="Faculty 1">
                 <div class="card-details">
                     <div class="card-name">Tarun Rathod</div>
                     
                 </div>
                 <div class="social-icons">
                   <a href="https://www.linkedin.com/in/tarunrathod?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon">
-                      <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+                      <img src="/assets/linkedin.png" alt="" style="width: 24px; height: 24px;">
                   </a>
               </div>
             </div>
@@ -257,53 +260,53 @@ document.addEventListener("DOMContentLoaded", function () {
           <h3 style=" font-size:30px; margin-top: 5px; ">Web Dev Team</h3>
           <div class="card-container">
             <div class="card">
-                <img src="surya.jpeg" alt="Mentor 1">
+                <img src="/assets/surya.jpeg" alt="Mentor 1">
                 <div class="card-details">
                     <div class="card-name">Suryanarayan Renjith</div>
                     <div class="card-designation">Innoviz Co-ordinator</div>
                 </div>
                 <div class="social-icons">
                   <a href="https://www.linkedin.com/in/suryanarayan-renjith" class="social-icon">
-                      <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+                      <img src="/assets/linkedin.png" alt="" style="width: 24px; height: 24px;">
                   </a>
               </div>
               
             </div>
             <div class="card">
-                  <img src="ananya.jpeg" alt="Mentor 1">
+                  <img src="/assets/ananya.jpeg" alt="Mentor 1">
                   <div class="card-details">
                       <div class="card-name">Ananya Bhat</div>
                       <div class="card-designation">Cultural Co-Ordinator</div>
                   </div>
                   <div class="social-icons">
                     <a href="https://www.linkedin.com/in/ananya-bhat-001a25253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon">
-                        <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+                        <img src="/assets/linkedin.png" alt="" style="width: 24px; height: 24px;">
                         <a href="https://www.instagram.com/anyaaaa_0103?igsh=MTdpbnhoYnhwb3NkdQ==" class="social-icon">
-                          <img src="instagram.png" alt="" style="width: 24px; height: 24px;">
+                          <img src="/assets/instagram.png" alt="" style="width: 24px; height: 24px;">
                     </a>
                 </div>
                   </div>
                   <div class="card">
-                    <img src="sheethal.jpeg" alt="Mentor 1">
+                    <img src="/assets/sheethal.jpeg" alt="Mentor 1">
                     <div class="card-details">
                         <div class="card-name">Sheethal S</div>
                         <div class="card-designation">Creative Co-ordinator</div>
                     </div>
                     <div class="social-icons">
                       <a href="https://www.linkedin.com/in/sheethal-shanthraj-921b71266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon">
-                          <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+                          <img src="/assets/linkedin.png" alt="" style="width: 24px; height: 24px;">
                       </a>
                   </div>
                     </div>
                     <div class="card">
-                      <img src="varun.jpeg" alt="Mentor 1">
+                      <img src="/assets/varun.jpeg" alt="Mentor 1">
                       <div class="card-details">
                           <div class="card-name">Varun S</div>
                           <div class="card-designation">Innoviz Co-ordinator</div>
                       </div>
                       <div class="social-icons">
                         <a href="https://www.linkedin.com/in/varun-somsaale-6a950625a/" class="social-icon">
-                            <img src="linkedin.png" alt="" style="width: 24px; height: 24px;">
+                            <img src="/assets/linkedin.png" alt="" style="width: 24px; height: 24px;">
                         </a>
                     </div>
                       </div>
@@ -315,7 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <h1 style=" text-align: center; margin-right: 300px; margin-top: 50px;font-size:40px;">Core Team</h1>
       <div class="card-container">
         <div class="card">
-          <img src="sanjana.jpeg" alt="Faculty 1">
+          <img src="/assets/sanjana.jpeg" alt="Faculty 1">
           <div class="card-details">
               <div class="card-name">Sanjana</div>
               <div class="card-designation">President, FACE</div>

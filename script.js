@@ -7,6 +7,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+window.onload = function() {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && window.innerWidth > 768) {
+      // If the user is on a mobile device and using desktop view, show the message
+      document.getElementById('desktop-view-message').style.display = 'block';
+  }
+};
+
 
 document.addEventListener("DOMContentLoaded", function() {
   const fadeText = document.getElementById("fade-text");

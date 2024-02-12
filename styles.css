@@ -5,6 +5,17 @@ body {
     color: #fff;
     overflow-x: hidden;
 }
+#desktop-view-message {
+    display: none;
+}
+
+/* CSS media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    #desktop-view-message {
+        display: none; /* Hide the message on mobile devices */
+    }
+}
+
 
 ::-webkit-scrollbar {
   width: 9px;
@@ -112,9 +123,10 @@ section {
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    background-image: url('bg.jpg');
+    background-image: url('/assets/bg.jpg');
     background-size: cover;
 }
+
 
 .fade-container {
     overflow: hidden;

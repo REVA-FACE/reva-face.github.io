@@ -17,12 +17,11 @@
     document.addEventListener("DOMContentLoaded", function () {
     var blackout = document.getElementById("blackout");
     var userAgent = navigator.userAgent;
-    
-    blackout.style.display = "flex";
-    if (userAgent.match(/iPhone/i) || userAgent.match(/Android/i)) {
-        blackout.style.opacity = 1;
+
+    if (userAgent.match(/iPhone|iPod|Android|webOS|Mobile/i)) {
+        blackout.style.display = "flex";
     } else {
-        blackout.style.opacity = 0;
+        blackout.style.display = "none";
     }
 });
   </script>

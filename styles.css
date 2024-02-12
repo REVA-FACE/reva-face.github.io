@@ -264,7 +264,7 @@ section {
   height: 150px;
   object-fit: cover;
   border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
+  border-top-right-radius: 10px; 
 }
 
 .slide1 .card-details {
@@ -307,6 +307,8 @@ section {
   width: 75%;
   height: 150px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide2 .card-details {
@@ -373,6 +375,8 @@ section {
   width: 75%;
   height: 150px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide3 .card-details {
@@ -437,6 +441,8 @@ section {
   width: 75%;
   height: 150px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide4 .card-details {
@@ -473,6 +479,8 @@ section {
   width: 75%;
   height: 150px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide5 .card-details {
@@ -509,6 +517,8 @@ section {
   width: 75%;
   height: 150px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide6 .card-details {
@@ -545,6 +555,8 @@ section {
   width: 75%;
   height: 150px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide7 .card-details {
@@ -581,6 +593,8 @@ section {
   width: 75%;
   height: 150px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide8 .card-details {
@@ -617,6 +631,8 @@ section {
   width: 75%;
   height: 150px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide9 .card-details {
@@ -653,6 +669,8 @@ section {
   width: 75%;
   height: 150px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide10 .card-details {
@@ -690,6 +708,8 @@ section {
   width: 75%;
   height: 130px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide11 .card-details {
@@ -730,6 +750,8 @@ section {
   width: 75%;
   height: 130px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide12 .card-details {
@@ -770,6 +792,8 @@ section {
   width: 75%;
   height: 130px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide13 .card-details {
@@ -810,6 +834,8 @@ section {
   width: 75%;
   height: 130px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 
 .slide14 .card-details {

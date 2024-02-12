@@ -8,40 +8,24 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title id="title"></title>
-    <script>
-      window.onload = function() {
-        const titleElement = document.getElementById('title');
-        const titleText = "Essence 2.0";
-        const characters = titleText.split('');
-        let index = 0;
-        let direction = 1;
-    
-        function updateTitle() {
-          if (direction === 1) {
-            if (index < characters.length) {
-              titleElement.textContent += characters[index];
-              index++;
-            } else {
-              direction = -1;
-            }
-          } else {
-            if (index > 1) {
-              index--;
-              titleElement.textContent = characters.slice(0, index).join('');
-            } else {
-              direction = 1;
-            }
-          }
-          setTimeout(updateTitle, 300);
-        }
-    
-        updateTitle();
-      };
-    </script>
+    <title>EssenCSE</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+ <div id="blackout">Hey! It looks like you are viewing on a mobile device, change it to the desktop view for the best viewing experience!</div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var blackout = document.getElementById("blackout");
+    var userAgent = navigator.userAgent;
+    
+    blackout.style.display = "flex";
+    if (userAgent.match(/iPhone/i) || userAgent.match(/Android/i)) {
+        blackout.style.opacity = 1;
+    } else {
+        blackout.style.opacity = 0;
+    }
+});
+  </script>
   <div id="preloader">
     <div id="spinner"></div>
 </div>

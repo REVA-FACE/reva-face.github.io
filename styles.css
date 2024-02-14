@@ -1244,95 +1244,23 @@ footer:hover {
   z-index: 1;
 }
 
+.slideshow-container {
+  text-align: center;
+}
+
+.single-photo {
+  display: none; 
+}
 
 
-@media screen and (max-width: 768px) {
-  .slide1 .card-container,
-  .slide2 .card-container,
-  .slide3 .card-container,
-  .slide4 .card-container,
-  .slide5 .card-container,
-  .slide6 .card-container,
-  .slide7 .card-container,
-  .slide8 .card-container,
-  .slide9 .card-container,
-  .slide10 .card-container,
-  .slide11 .card-container,
-  .slide12 .card-container,
-  .slide13 .card-container,
-  .slide14 .card-container {
-    margin-right: 0; 
-    justify-content: center; 
+@media (max-width: 768px) {
+  .slideshow-container {
+    display: none; 
   }
 
- 
-  .slide1 .card,
-  .slide2 .card,
-  .slide3 .card,
-  .slide4 .card,
-  .slide5 .card,
-  .slide6 .card,
-  .slide7 .card,
-  .slide8 .card,
-  .slide9 .card,
-  .slide10 .card,
-  .slide11 .card,
-  .slide12 .card,
-  .slide13 .card,
-  .slide14 .card {
-    width: 150px; 
-    height: 220px; 
-    margin: 10px; 
-  }
-
- 
-  .slide1 .card-details,
-  .slide2 .card-details,
-  .slide3 .card-details,
-  .slide4 .card-details,
-  .slide5 .card-details,
-  .slide6 .card-details,
-  .slide7 .card-details,
-  .slide8 .card-details,
-  .slide9 .card-details,
-  .slide10 .card-details,
-  .slide11 .card-details,
-  .slide12 .card-details,
-  .slide13 .card-details,
-  .slide14 .card-details {
-    font-size: 12px; 
-    padding: 10px; 
-  }
-
- 
-  .slide1 .card-name,
-  .slide2 .card-name,
-  .slide3 .card-name,
-  .slide4 .card-name,
-  .slide5 .card-name,
-  .slide6 .card-name,
-  .slide7 .card-name,
-  .slide8 .card-name,
-  .slide9 .card-name,
-  .slide10 .card-name,
-  .slide11 .card-name,
-  .slide12 .card-name,
-  .slide13 .card-name,
-  .slide14 .card-name,
-  .slide2 .card-designation,
-  .slide3 .card-designation,
-  .slide4 .card-designation,
-  .slide5 .card-designation,
-  .slide6 .card-designation,
-  .slide7 .card-designation,
-  .slide8 .card-designation,
-  .slide9 .card-designation,
-  .slide10 .card-designation,
-  .slide11 .card-designation,
-  .slide12 .card-designation,
-  .slide13 .card-designation,
-  .slide14 .card-designation {
-    font-size: 10px; 
+  .single-photo {
+    display: block; 
+    text-align: center;
   }
 }
 /* General */

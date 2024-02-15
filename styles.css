@@ -236,6 +236,7 @@ section {
 
 .slide {
   text-align: center;
+    display: none;
 }
 /* Slide 1: Faculty Members */
 .slide1 .card-container {

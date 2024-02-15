@@ -106,7 +106,7 @@ function changeSlide(n) {
 // Auto-advance slides every 10 seconds
 setInterval(() => {
     showSlide(1);
-}, 12000);
+}, 9000);
 
 content.addEventListener('scroll', function() {
   clearTimeout(timer);
@@ -118,3 +118,23 @@ content.addEventListener('scroll', function() {
     });
   }, 5000);
 });
+
+  
+    document.addEventListener("DOMContentLoaded", function() {
+
+  const isEdge = navigator.userAgentData?.brands?.some(brand => brand.brand === 'Microsoft Edge');
+
+  if (isEdge) {
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    
+    if (prevBtn) {
+      prevBtn.style.marginTop = "3450px";
+    }
+    
+    if (nextBtn) {
+      nextBtn.style.marginTop = "3450px";
+    }
+  }
+});
+ 

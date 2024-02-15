@@ -627,29 +627,13 @@ document.addEventListener("DOMContentLoaded", function () {
         <a class="prev" onclick="changeSlide(-1)">❮</a>
         <a class="next" onclick="changeSlide(1)">❯</a>
     </div>
-    
+    <div class="single-photo mobile-view">
+        <img src="face.jpeg" alt="Single Photo">
+      </div>
   
 </section>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
 
-  const isEdge = navigator.userAgentData?.brands?.some(brand => brand.brand === 'Microsoft Edge');
-
-  if (isEdge) {
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
-    
-    if (prevBtn) {
-      prevBtn.style.marginTop = "3450px";
-    }
-    
-    if (nextBtn) {
-      nextBtn.style.marginTop = "3450px";
-    }
-  }
-});
-  </script>
 
   <section id="faq" class="section">
     <h2>FAQ</h2>

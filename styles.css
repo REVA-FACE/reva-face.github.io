@@ -1247,6 +1247,24 @@ footer:hover {
 .fade-container {
   z-index: 1;
 }
+/* Hide all slides for mobile view */
+@media screen and (max-width: 768px) {
+  .slide {
+    display: none;
+  }
+  
+ 
+  .teams-mobile-message {
+    display: block;
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
+
+  .regular-containers {
+    display: none;
+  }
+}
 
 
 

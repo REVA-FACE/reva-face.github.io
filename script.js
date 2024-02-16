@@ -116,7 +116,7 @@ content.addEventListener('scroll', function() {
       top: 0,
       behavior: 'smooth'
     });
-  }, 30000);
+  }, 26000);
 });
 
   

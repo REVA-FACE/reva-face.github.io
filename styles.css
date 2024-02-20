@@ -1047,12 +1047,12 @@ footer:hover {
 }
 
 .sponsor-card {
-  width: 300px;
+  width: 400px;
   height: 250px;
   border-radius: 50%;
   margin-bottom: 10px; 
   overflow: hidden;
-  margin: 10px;
+  margin: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -1245,10 +1245,23 @@ footer:hover {
   z-index: 1;
 }
 
-@media screen and (max-width: 768px) {
- 
+.slideshow-container {
+  text-align: center;
+}
+
+.single-photo {
+  display: none; 
+}
+
+
+@media (max-width: 768px) {
   .slideshow-container {
-    display: none;
+    display: none; 
+  }
+
+  .single-photo {
+    display: block; 
+    text-align: center;
   }
 }
 

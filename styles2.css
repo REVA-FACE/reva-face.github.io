@@ -1,0 +1,138 @@
+
+@media screen and (min-width: 600px) {
+    .card-container {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      width: calc(33.33% - 30px);
+      max-width: 250px;
+      height: auto;
+    }
+
+    .card-button {
+      padding: 1px;
+    }
+  }  
+
+  @media (max-width: 768px) {
+    .reg-button {
+      position: absolute;
+      top: 3250px;
+      left:330px;
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      padding: 30px 10px;
+    }
+    
+    .hamburger-menu {
+      display: block;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+    
+    nav {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+    }
+    
+    nav.open {
+      display: flex;
+    }
+    
+    nav a {
+      margin: 10px 0;
+      margin-left: 0;
+    }
+    
+    nav a::before {
+      display: none;
+    }
+    
+    .im1,
+    .im2 {
+      margin: 0 auto;
+    }
+  } 
+
+  @media (max-width: 768px) {
+    .sponsor-card {
+      width: calc(100% - 20px);
+      height: 100px;
+      margin: 5px 10px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding-right: 20px;
+    }
+    #sponsor-txt {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .slide {
+        text-align: center; 
+    }
+  
+    .slide h1 {
+        margin-right: 0; 
+    }
+  
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .card {
+        width: 100%; 
+        max-width: 300px; 
+        margin-bottom: 20px; 
+    }
+  
+    .prev,
+    .next {
+        display: none; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .prev,
+    .next {
+        display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #reg-txt {
+      position: absolute;
+      top: 3150px;
+      left:380px;
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      width: calc(100% - 30px);
+    }
+  } 
+
+  @media only screen and (max-width: 600px) {
+    #countdown {
+      font-size: 24px;
+      top: 130px;
+      margin-top: 20px;
+    }
+  }

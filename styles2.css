@@ -137,10 +137,7 @@
   }
 }
 
-@media (max-width: 768px) {
-  .slideshow-container {
-    display: none; 
-  }
+
 
 @media screen and (max-width: 768px) {
   .card {

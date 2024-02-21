@@ -1102,7 +1102,25 @@ footer:hover {
 .fade-container {
   z-index: 1;
 }
+.slideshow-container {
+  text-align: center;
+}
 
+.single-photo {
+  display: none; 
+}
+
+
+@media (max-width: 768px) {
+  .slideshow-container {
+    display: none; 
+  }
+
+  .single-photo {
+    display: block; 
+    text-align: center;
+  }
+}
 
 
 

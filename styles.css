@@ -843,25 +843,7 @@ section {
     right: 10px;
     margin-top: 3500px;
 }
-.slideshow-container {
-  text-align: center;
-}
 
-.single-photo {
-  display: none; 
-}
-
-
-@media (max-width: 768px) {
-  .slideshow-container {
-    display: none; 
-  }
-
-  .single-photo {
-    display: block; 
-    text-align: center;
-  }
-}
   
    .reg-button {
     display: inline-block;

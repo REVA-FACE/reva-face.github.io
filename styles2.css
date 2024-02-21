@@ -136,25 +136,7 @@
     font-size: 16px;
   }
 }
-.slideshow-container {
-  text-align: center;
-}
 
-.single-photo {
-  display: none; 
-}
-
-
-@media (max-width: 768px) {
-  .slideshow-container {
-    display: none; 
-  }
-
-  .single-photo {
-    display: block; 
-    text-align: center;
-  }
-}
 
 
 @media screen and (max-width: 768px) {

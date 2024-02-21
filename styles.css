@@ -1102,13 +1102,7 @@ footer:hover {
 .fade-container {
   z-index: 1;
 }
-.slideshow-container {
-  text-align: center;
-}
 
-.single-photo {
-  display: none; 
-}
 
 
 @media (max-width: 768px) {
@@ -1116,11 +1110,7 @@ footer:hover {
     display: none; 
   }
 
-  .single-photo {
-    display: block; 
-    text-align: center;
-  }
-}
+
 
 
 

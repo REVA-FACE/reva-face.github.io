@@ -106,7 +106,7 @@ function changeSlide(n) {
 // Auto-advance slides every 10 seconds
 setInterval(() => {
     showSlide(1);
-}, 9000);
+}, 25000);
 
 content.addEventListener('scroll', function() {
   clearTimeout(timer);
@@ -116,7 +116,7 @@ content.addEventListener('scroll', function() {
       top: 0,
       behavior: 'smooth'
     });
-  }, 25000);
+  }, 5000);
 });
 
   
